@@ -228,6 +228,177 @@
                         <h2>Demo time!</h2>
                     </section>
                 </section>
+                <section>
+                    <h2>Twatter - Advanced example</h2>
+                    <p>
+                        An AngularJS Twitter-clone, using Twitter's API for data
+                    </p>
+                    <p>
+                        <small><code>git tag -l -n1</code></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Setup</h2>
+                    <ul>
+                        <li>NodeJS Server (ExpressJS) for backend</li>
+                        <li>Grunt - for building application, live-reload etc.</li>
+                        <li>Bower - for acquiring frontend dependencies</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Initial application - v1.0</h2>
+                    <ul>
+                        <li>Styled (CSS)</li>
+                        <li>ngRoute</li>
+                        <li>ng-view</li>
+                    </ul>
+                    <p>
+                        <small><code>git checkout v1.0</code></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Routing</h2>
+                    <ul>
+                        <li>ngRoute
+                            <ul>
+                                <li>configured through provider</li>
+                                <li>listens for hash change (history hook)</li>
+                                <li>arguments in $routeParams</li>
+                            </ul>
+                        </li>
+                        <li>ngView
+                            <ul>
+                                <li>holds "hydrated" view</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Log in - Twitter</h2>
+                    <ul>
+                        <li>Dependency injection</li>
+                        <li>Rest abstraction</li>
+                        <li>twitter-api.js</li>
+                        <li>ngResource / $resource</li>
+                    </ul>
+                    <p>
+                        <small><code>git checkout v1.1</code></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Dependency injection</h2>
+                    <ul>
+                        <li>By JavaScript name
+                            <ul>
+                                <li>may result in obfuscation / minification issues</li>
+                                <li>array-dialect as workaround</li>
+                            </ul>
+                        </li>
+                        <li>Can be:
+                            <ul>
+                                <li>Service - new instance of function</li>
+                                <li>Factory - result returned by invoking function</li>
+                                <li>Provider - a configurable factory (from config-phase of angular)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Rest abstraction</h2>
+                    <ul>
+                        <li>ngResource (injected as $resource)</li>
+                        <li>Builds upon
+                            <ul>
+                                <li>$http service</li>
+                                <li>Promises ($q service)</li>
+                            </ul>
+                        </li>
+                        <li>High-level abstract -&gt; fluent REST interop</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Retrieve tweets</h2>
+                    <ul>
+                        <li>Additional operation in twitter-api.js</li>
+                        <li>Adding search functionality to main.js</li>
+                    </ul>
+                    <p>
+                        <small><code>git checkout v1.2</code></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Filtering</h2>
+                    <ul>
+                        <li>"filter"-filter</li>
+                        <li>
+                            Custom filter
+                            <ul>
+                                <li>single-arg function returning true / false</li>
+                            </ul>
+                        </li>
+                        <li>pipe in ngRepeat
+                            <ul>
+                                <li><code>ng-repeat="...| filter: &lt;string|object&gt;</code>"</li>
+                            </ul>
+                        </li>
+                        <li>example: filtering on retrieved tweets</li>
+                    </ul>
+                    <p>
+                        <small><code>git checkout v1.3</code></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Custom elements - Directives</h2>
+                    <ul>
+                        <li>Enhance the DOM</li>
+                        <li>Re-usable components</li>
+                        <li>Composable</li>
+                        <li>example: google-maps.js</li>
+                    </ul>
+                    <p>
+                        <small><code>git checkout v1.4</code></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Animation</h2>
+                    <ul>
+                        <li>ngAnimate module</li>
+                        <li>Hooks into common AngularJS directives
+                            <ul>
+                                <li>ngRepeat</li>
+                                <li>ngView</li>
+                                <li>ngIf</li>
+                                <li>ngSwitch</li>
+                            </ul>
+                        </li>
+                        <li>Enhanceable through $animate-service</li>
+                    </ul>
+                    <p>
+                        <small><code>git checkout v1.4</code></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Animation methods</h2>
+                    <ul>
+                        <li>JavaScript based</li>
+                        <li>CSS3 keyframe based</li>
+                        <li>CSS3 transition based
+                            <ul>
+                                <li>example: main.scss</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>More information at:</h2>
+                    <ul>
+                        <li><a href="https://docs.angularjs.org/tutorial">Official AngularJS Tutorial</a></li>
+                        <li><a href="https://docs.angularjs.org/guide">Official AngularJS Guide</a></li>
+                        <li><a href="https://docs.angularjs.org/api">Official AngularJS API Reference</a></li>
+                        <li><a href="http://egghead.io">Egghead.io</a></li>
+                        <li><a href="http://yearofmoo">Year of Moo</a></li>
+                    </ul>
+                </section>
 
 				<section>
 					<h1>THE END</h1>
