@@ -70,7 +70,7 @@
                     <ul>
                         <li>Name: Anders Skarby</li>
                         <li>Occupation: Software developer of 10 years</li>
-                        <li><strike style="color: red;">Experience: Web developer</strike> hacking web apps for 15 years</li>
+                        <li>Experience: <strike style="color: darkgray;">Web developer</strike> hacking web apps for 15 years</li>
                         <li>Day job: <a href="http://schneider-electric.com">Schneider Electric</a>
                             <ul><li>Yes, we're hiring...</li></ul>
                         </li>
@@ -125,7 +125,8 @@
             &lt;button id="btn1"&gt;&lt;button/&gt;
         &lt;/div&gt;
         &lt;div id=&quot;container2&quot;&gt;
-            &lt;textarea id="editor"&gt;&lt;textarea/&gt;
+            &lt;input id="inp1"/&gt;
+            &lt;textarea id="edt1"&gt;&lt;textarea/&gt;
             &lt;button id="btn2"&gt;&lt;button/&gt;
         &lt;/div&gt;
         ...
@@ -188,7 +189,8 @@
             &lt;button id="btn1" ng-click="createNewNote()"&gt;&lt;button/&gt;
         &lt;/notelist&gt;
         &lt;editor id=&quot;container2&quot;&gt;
-            &lt;textarea id="editor" ng-model="selectedNote"&gt;&lt;textarea/&gt;
+            &lt;input id="inp1" ng-model="note.title"/&gt;
+            &lt;textarea id="edt1" ng-model="note.content"&gt;&lt;textarea/&gt;
             &lt;button id="btn2" ng-click="save()"&gt;Save note&lt;button/&gt;
         &lt;/editor&gt;
         ...
